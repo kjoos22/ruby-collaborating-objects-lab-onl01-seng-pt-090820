@@ -25,7 +25,7 @@ class Artist
     artists = Artist.all.select {|artist| artist.name == name}
     artist = artists[0]
     if artist == nil
-      artist = artist.new(name)
+      artist = Artist.new(name)
     end
     artist
     
