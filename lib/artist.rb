@@ -25,7 +25,7 @@ class Artist
     selected_artist = artits.select |artist|
       artist.name == name
     end
-    if selected_artist = nil
+    if selected_artist == nil
       selected_artist = Artist.new(name)
     end
     selected_artist
