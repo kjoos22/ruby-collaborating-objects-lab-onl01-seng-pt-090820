@@ -23,7 +23,7 @@ class Artist
   def self.find_or_create_by_name(name)
     artists = Artist.all
     
-    selected_artist = artits.select? do |artist|
+    selected_artist = artists.select? do |artist|
       artist.name == name
     end
     if selected_artist == nil
