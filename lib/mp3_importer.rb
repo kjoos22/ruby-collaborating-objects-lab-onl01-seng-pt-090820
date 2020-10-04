@@ -9,7 +9,7 @@ class MP3Importer
   
   def files
     files = []
-    files = Dir.entries(@path)
+    files = Dir.glob(@path)
     binding.pry
     files
   end
